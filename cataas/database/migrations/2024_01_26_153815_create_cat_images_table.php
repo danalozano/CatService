@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('cat_images', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id(); // Camp d'identitat
+            $table->string('_id')->unique(); // Camp únic per emmagatzemar l'_id
+            $table->string('mimetype');
+            $table->integer('size');
+            $table->json('tags'); // Camp de tipus JSON per emmagatzemar les etiquetes
+            $table->timestamps(); // Camps de data i hora de creació i actualització
         });
     }
 
