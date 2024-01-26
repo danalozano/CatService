@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CatImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/cataas', [CatImageController::class, 'index']);
+Route::get('/cat', [CatImageController::class, 'index']);

@@ -14,7 +14,7 @@ class CatImageSeeder extends Seeder
     {
         $client = new Client(); //  GuzzleHttp\Client class
 
-        $response = $client->get('https://cataas.com/api/cats?&skip=0&limit=100000');
+        $response = $client->get('https://cataas.com/api/cats?&skip=0&limit=1000');
         $data = json_decode($response->getBody(), true);
 
         foreach ($data as $item) {

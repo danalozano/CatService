@@ -14,7 +14,7 @@ class CatImageController extends Controller
     public function index()
     {
         $catImages = CatImage::all();
-        return view('cataas.index', compact('catImages'));
+        return view('cat.index', compact('catImages'));
     }
 
     /**

@@ -3,7 +3,6 @@
 
 @foreach ($catImages as $catImage)
     {{ $catImage->_id }}
-    <!-- Mostrar otros campos según sea necesario -->
 @endforeach
 
 </div>
