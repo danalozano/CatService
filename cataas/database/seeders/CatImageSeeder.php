@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use GuzzleHttp\Client;
+use App\Models\CatImage;
 
 class CatImageSeeder extends Seeder
 {
