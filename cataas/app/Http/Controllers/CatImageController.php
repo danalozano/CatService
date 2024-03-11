@@ -30,7 +30,7 @@ class CatImageController extends Controller
      */
     public function store(StoreCatImageRequest $request)
     {
-        //
+      //  CatImage::create($request->all());
     }
 
     /**
